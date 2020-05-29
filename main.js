@@ -22,11 +22,11 @@ console.log('Kata 2 - Product: ' + multiply(2,5))
 
 //Kata 3 - Power
 function power(x,n) {
-    let power = 1;
+    let pow = 1;
     for (ctr2 = 0; ctr2 < n; ctr2++) {
-        power = multiply(power, multiply(x,1));
+        pow = multiply(pow, multiply(x,1));
     }
-    return power;
+    return pow;
 }
 //Output Power
 console.log('Kata 3 - Power: ' + power(2,5))
@@ -56,10 +56,10 @@ function fibonacci(n) {
     if (n <= 2) return 1;
 
     //Calculate rest of sequence if input greater than 3
-    for (let i = 2; i <= n; i++) {
-      arr[i] = add(arr[add(i,-1)],arr[add(i,-2)]);
+    for (let ctr4 = 2; ctr4 <= n; ctr4++) {
+      arr[ctr4] = add(arr[add(ctr4,-1)],arr[add(ctr4,-2)]);
     }
     return arr[add(n, -1)]; //Return position taking into account possition 0 of the array
 }
 //Output Fibonacci
-console.log('Kata Bonus - Fibonaci: ' + fibonacci(3));
+console.log('Kata Bonus - Fibonaci: ' + fibonacci(10));

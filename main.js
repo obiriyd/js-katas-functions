@@ -14,7 +14,7 @@ function multiply(a,b) {
     }
     return product;
 }
-console.log('Kata 1 - Multiply: ' + multiply(2,5))
+console.log('Kata 2 - Multiply: ' + multiply(2,5))
 
 
 
@@ -26,7 +26,7 @@ function power(x,n) {
     }
     return pow;
 }
-console.log('Kata 1 - Power: ' + power(4,2))
+console.log('Kata 3 - Power: ' + power(4,2))
 
 
 
@@ -39,7 +39,7 @@ function factorial(f) {
     }
     return fact;
 }
-console.log('Kata 1 - Factorial: ' + factorial(6))
+console.log('Kata 4 - Factorial: ' + factorial(6))
 
 
 //Kata Bonus - Fibonacci
@@ -56,4 +56,4 @@ function fibonacci(n) {
   }
 
 
-console.log('Kata 1 - Factorial: ' + fibonacci(7));
+console.log('Kata Bonus - Fibonaci: ' + fibonacci(7));

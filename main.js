@@ -48,11 +48,11 @@ function fibonacci(n) {
     if (n <= 2) return 1;
   
     for (let i = 2; i <= n; i++) {
-      arr[i] = add(arr[i - 1],arr[i - 2]);
+      arr[i] = add(arr[add(i,-1)],arr[add(i,-2)]);
     }
   
-    return arr[n];
+    return arr[add(n, -1)];
   }
 
 
-console.log('Kata Bonus - Fibonaci: ' + fibonacci(7));
+console.log('Kata Bonus - Fibonaci: ' + fibonacci(8));

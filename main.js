@@ -9,37 +9,36 @@ console.log('Kata 1 - Addition: ' + add(6,5));
 //Kata 2 - Product
 function multiply(a,b) {
     let product = 0;
-    for (ctr1 = 0; ctr1 < b; ctr1 += 1) {
+    for (ctr1 = 0; ctr1 < b; ctr1++) {
         product += add(a,0);
     }
     return product;
 }
-console.log('Kata 2 - Multiply: ' + multiply(2,5))
+console.log('Kata 2 - Product: ' + multiply(2,5))
 
 
 
 //Kata 3 - Power
 function power(x,n) {
-    let pow = 1;
-    for (ctr2 = 0; ctr2 < n; ctr2 += 1) {
-        pow *= multiply(x,1);
+    let power = 1;
+    for (ctr2 = 0; ctr2 < n; ctr2++) {
+        power *= multiply(x,1);
     }
-    return pow;
+    return power;
 }
-console.log('Kata 3 - Power: ' + power(4,2))
+console.log('Kata 3 - Power: ' + power(2,5))
 
 
 
 //Kata 4 - Factorial
 function factorial(f) {
-    let fact = f;
-    for (ctr3 = f-1; ctr3 > 0; ctr3 -= 1) {
-        //console.log(ctr3)
-        fact *= multiply(ctr3,1);
+    let factorial = f;
+    for (ctr3 = 1; ctr3 < f; ctr3++) {
+        factorial *= multiply(ctr3,1);
     }
-    return fact;
+    return factorial;
 }
-console.log('Kata 4 - Factorial: ' + factorial(6))
+console.log('Kata 4 - Factorial: ' + factorial(5))
 
 
 //Kata Bonus - Fibonacci
